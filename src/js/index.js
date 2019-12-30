@@ -6,6 +6,6 @@ const nav = document.querySelector('nav');
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('menu-is-active');
     hamburger.classList.contains('menu-is-active') 
-    ? nav.style.width = '100%'
-    : nav.style.width = '0';
+    ? nav.classList.add('nav-show')
+    : nav.classList.remove('nav-show');
 });
