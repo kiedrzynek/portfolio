@@ -69,7 +69,6 @@ section {
 
 nav {
     width: 100%;
-    height: 4em;
 
     position: fixed;
     z-index: 1; 
@@ -77,31 +76,35 @@ nav {
     right: 200%;
     overflow-x: hidden;
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-
     background-color: #fff;
 
     transition: 0.2s; 
 
     ul {
+        height: 4em;
         display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
+        flex-flow: row nowrap;
+        justify-content: center;
 
-        margin-left: 0.5em;
+        margin-left: 2em;
 
         li {
-            margin: 0.5em;
+            display: flex;
+            flex: 1;
             list-style-type: none;
 
             a {
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
                 color: #000;
-                padding: 2px 2px 2px 5px;
                 text-decoration: none;
-                font-size: 0.7em;
+                font-size: 3.5vw;
+
                 transition: 0.2s;
             }
         }
@@ -118,11 +121,12 @@ nav {
     left: 0;
     z-index: 1;
 
-    margin: 0.5em;
-
     width: 3.9em;
+    height: 5.5em;
     background-color: transparent;
     border: none;
+
+    transform: scale(0.65);
 
     .bar {
         border-bottom: 5px solid;
@@ -130,6 +134,12 @@ nav {
         color: $white;
         transition: all 0.2s;
     }
+}
+
+
+.hamburger:focus {
+    transform: scale(0.9);
+    outline: none;
 }
 
 .menu-is-active {
@@ -147,6 +157,11 @@ nav {
     .bottom {
         transform: rotate(-45deg);
     }
+}
+
+.menu-is-active:focus {
+    transform: scale(0.65);
+    outline: none;
 }
 
 
