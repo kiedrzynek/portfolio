@@ -231,6 +231,27 @@ nav {
     margin: 2.5em 1.5em;
 }
 
+/*  SECTION - SKILLS  */
+
+.skills-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+}
+
+.skill-wrap {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 0.3em;
+}
+
+@media (min-width: 900px) {
+    .skills-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 /*  SECTION - CONTACT  */
 
 label, 
