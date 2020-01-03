@@ -252,6 +252,112 @@ nav {
     }
 }
 
+/*  SECTION - PROJECTS  */
+
+#projects {
+    margin: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 2em;
+
+    h3 {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 900px) {
+    #projects {
+        margin: 0.5em;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1620px) {
+    #projects {
+        margin: 10em;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.project-image-wrapper {
+    
+    .project-link {
+        display: block;
+        position: relative;
+    }
+    
+    img {
+        display: block;
+        width: 100%;
+        background-color: #000;
+        border-radius: 2px;
+        opacity: 1;
+        transition: opacity 500ms ease-in-out;
+    }
+
+    img:hover {
+        opacity: 8%;
+        transition: opacity 500ms ease-in-out;
+    }
+
+    .project-name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 2em;
+        color: $white;
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+    }
+
+    .project-desc {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        margin-top: 1.5em;
+
+        font-size: 0.9em;
+
+        span {
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 1.5em;
+            justify-self: center;
+
+            li {
+                display: inline-block;
+
+                list-style-type: none;
+
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 0.8em;
+                font-weight: bold;
+                color: rgb(182, 182, 182);
+
+                border: 1px solid rgb(37, 37, 37);
+                box-shadow: 1px 1px 0 rgb(27, 27, 27);
+                background-color: rgb(43, 43, 43);
+                border-radius: 2px;
+
+                margin: 5px;
+                padding: 5px;
+            }
+        }
+    }
+}
+.project-link:hover img {
+	opacity: 0;
+}
+
+.project-link:hover .project-name {
+    opacity: 1;
+}
+
 /*  SECTION - CONTACT  */
 
 label, 
