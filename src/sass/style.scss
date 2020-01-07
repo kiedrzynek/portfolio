@@ -410,5 +410,27 @@ nav {
     } 
 }
 
+/*  FOOTER  */
+
+footer {
+    padding-bottom: 2em;
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin: 0.5em;
+        }
+    }
+
+    p {
+        margin: 0.7em;
+        text-align: center;
+        font-size: 0.7em;
+    }
+}
+
+
 
 
