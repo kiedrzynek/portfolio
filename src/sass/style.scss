@@ -315,7 +315,17 @@ section {
 /*  SECTION - HERO HEADER  */
 
 .hero-header {
-    height: 95vh;
+    height: 85vh;
+
+    .svg-arrow-down {
+        position: relative;
+        animation: scroll-arrow .8s ease-out .5s infinite alternate;
+    }
+
+    @keyframes scroll-arrow {
+        from {top: 0px;}
+        to {top: 20px;}
+    }
 }
 
 /*  SECTION - ABOUT ME  */
