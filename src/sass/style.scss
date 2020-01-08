@@ -18,35 +18,45 @@ body {
 }
 
 h1 {
-    font-size: 5em;
-    padding-top: 3em;
+    font-size: 2.3em;
+    padding-top: 1.5rem;
+    margin: 1rem 1rem 0.6rem 1rem;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-size: 3.5em;
+    font-size: 2.1em;
+    margin: 0.4rem 1rem 1.5rem 1rem;
     opacity: 85%;
 }
 
 h3 {
     font-size: 2.5em;
+    text-align: center;
+    margin: 4rem 1rem;
 }
 
 h1,
 h2,
 h3 {
     color: $white;
-    text-align: center;
-    margin: 4rem 1rem;
 }
 
-@media (max-width: 900px) {
-    h1 {
-        font-size: 1.9em;
-        margin: 0.8em;
-    }
+@media (min-width: 1000px) {
+    .hero-header {
+        h1 {
+            font-size: 5em;
+            margin: 5rem 6rem 2rem 6rem;
+        }
+    
+        h2 {
+            font-size: 4em;
+            margin: 1rem 6rem 5rem 6rem;
+        }
 
-    h2 {
-        font-size: 1.5em;
+        .svg-arrow-down {
+            margin-left: 5rem;
+        }
     }
 }
 
@@ -212,9 +222,8 @@ nav {
 /*  SECTION - HERO HEADER  */
 
 .hero-header {
-    height: 95vh;
+    height: 85vh;
 }
-
 
 /*  SECTION - ABOUT ME  */
 
