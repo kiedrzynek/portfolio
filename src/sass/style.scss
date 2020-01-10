@@ -333,10 +333,7 @@ nav {
         transition: opacity 500ms ease-in-out;
     }
 
-    .project-desc {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
+    .project-desc {       
         margin-top: 1.5em;
 
         font-size: 0.9em;
@@ -346,27 +343,19 @@ nav {
         }
 
         ul {
-            margin-left: 1.5em;
-            justify-self: center;
-
             li {
-                display: inline-block;
+                display: inline;
 
                 list-style-type: none;
 
-                text-align: center;
                 text-transform: uppercase;
                 font-size: 0.8em;
-                font-weight: bold;
                 color: rgb(182, 182, 182);
-
-                border: 1px solid rgb(37, 37, 37);
-                box-shadow: 1px 1px 0 rgb(27, 27, 27);
-                background-color: rgb(43, 43, 43);
-                border-radius: 2px;
-
-                margin: 5px;
-                padding: 5px;
+                
+                &:not(:last-child):after {
+                    content: '/';
+                    padding: 0 .5em;
+                }
             }
         }
     }
