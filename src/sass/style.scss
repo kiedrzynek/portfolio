@@ -36,14 +36,9 @@ h3 {
     margin: 4rem 1rem;
 }
 
-h4 {
-    color: $white;
-    font-family: Oswald;
-}
-
 h1, h2, h3 {
     color: $white;
-    font-family: Montserrat;
+    font-family: Oswald;
 }
 
 @media (min-width: 1000px) {
@@ -186,6 +181,8 @@ nav {
     margin: 1em auto;
     font-family: Oswald;
     text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -193,10 +190,7 @@ nav {
     width: 9rem;
     height: auto;
     padding: 0.7em;
-    text-decoration: none;
     font-size: 0.8em;
-    text-align: center;
-
     background: $white;
     border: 1px solid $white;
     color: rgb(65, 65, 65);
@@ -227,8 +221,24 @@ nav {
         border-color: $white;
         color: #000;
     }
-} 
+}
 
+.contact-button {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    width: 3em;
+    height: 3em;
+
+    margin: 1.2em;
+
+    border: none;
+    border-radius: 15%;
+    box-shadow: 0 2px 6px 0 rgba(211, 211, 211, 0.4);
+
+    background-color: #fff;
+}
 
 /*  SECTION - HERO HEADER  */
 
@@ -275,7 +285,7 @@ nav {
 /*  SECTION - PROJECTS  */
 
 #projects {
-    margin: 4em;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-gap: 2em;
@@ -288,85 +298,108 @@ nav {
 
 @media (max-width: 900px) {
     #projects {
-        margin: 0.5em;
         grid-template-columns: 1fr;
     }
 }
 
 @media (min-width: 1620px) {
     #projects {
-        margin: 10em;
         grid-template-columns: 1fr 1fr;
     }
 }
-
-.project-image-wrapper {
-    
-    .project-link {
-        display: block;
+.project {
+    .project-figure {
         position: relative;
-    }
-    
-    img {
-        display: block;
-        width: 100%;
-        background-color: #000;
-        border-radius: 2px;
-        opacity: 1;
-        transition: opacity 500ms ease-in-out;
-    }
 
-    img:hover {
-        opacity: 8%;
-        transition: opacity 500ms ease-in-out;
-    }
+        .project-image-wrapper {
+            position: relative;
+            height: 90vh;
+            width: 100%;
+            overflow: hidden;
 
-    .project-name {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+            .project-link {
+                position: absolute;
+                bottom: 25%;
 
-        font-size: 2em;
-        color: $white;
-        opacity: 0;
-        transition: opacity 500ms ease-in-out;
-    }
+                width: 5.5rem;
+                height: auto;
+                padding: 0.7em;
+                margin: 0;
 
-    .project-desc {       
-        margin-top: 1.5em;
+                font-size: .9em;
+            }
 
-        font-size: 0.9em;
+            .link-live {
+                left: 10%;
+            }
 
-        span {
-            text-align: justify;
+            .link-code {
+                right: 40%;
+            }
+            
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                opacity: 1;
+                filter: grayscale(100%) blur(3px) brightness(80%);
+                transform: scale(1.1);
+            }
         }
 
-        ul {
-            li {
-                display: inline;
+        .project-figcaption {     
+            position: absolute;
+            top: 20%;
+            left: 10%;
 
-                list-style-type: none;
+            display: block;
+            height: 80%;
+            width: auto;
 
+            margin: .5em 1.6em 0 0;
+            font-size: .9em;
+
+            .project-name {
+                font-family: Oswald;
+                font-size: 3.3em;
+                font-weight: 700;
+                line-height: 1.2;
                 text-transform: uppercase;
-                font-size: 0.8em;
-                color: rgb(182, 182, 182);
+                color: $white;
+
+                margin-bottom: .2em;
+            }
+    
+            span {
                 
-                &:not(:last-child):after {
-                    content: '/';
-                    padding: 0 .5em;
+                color: #c0c0c0;
+                font-size: .9em;
+            }
+    
+            ul {
+                position: absolute;
+                bottom: 5%;
+
+                li {
+                    display: inline;
+    
+                    list-style-type: none;
+    
+                    text-transform: uppercase;
+                    font-size: .65em;
+                    color: rgb(182, 182, 182);
+                    
+                    &:not(:last-child):after {
+                        content: '/';
+                        padding: 0 .1em 0 .5em;
+                    }
                 }
             }
         }
     }
 }
-.project-link:hover img {
-	opacity: 0;
-}
 
-.project-link:hover .project-name {
-    opacity: 1;
-}
+
 
 /*  SECTION - CONTACT  */
 
