@@ -307,6 +307,7 @@ nav {
         grid-template-columns: 1fr 1fr;
     }
 }
+
 .project {
     .project-figure {
         position: relative;
@@ -327,6 +328,8 @@ nav {
                 margin: 0;
 
                 font-size: .9em;
+
+                z-index: 1;
             }
 
             .link-live {
@@ -344,6 +347,10 @@ nav {
                 opacity: 1;
                 filter: grayscale(100%) blur(3px) brightness(80%);
                 transform: scale(1.1);
+            }
+
+            #hexbox-img {
+                filter: grayscale(100%) blur(3px) brightness(40%);
             }
         }
 
