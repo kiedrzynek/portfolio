@@ -287,13 +287,18 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5em;
-}
 
-.skill-wrap {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 0.3em;
+    .skill-wrap {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 0.3em;
+    }
+    
+    .skill-icon {
+        width: 10vh;
+        height: 10vh;
+    }
 }
 
 @media (min-width: 900px) {
