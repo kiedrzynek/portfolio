@@ -60,9 +60,9 @@ h1, h2, h3 {
 }
 
 p {
-    text-align: justify;
+    text-align: left;
+    line-height: 1.3;
     margin: 1.5em;
-
 }
 
 section, header, footer {
@@ -248,17 +248,37 @@ nav {
 
 /*  SECTION - ABOUT ME  */
 
-.img-crop  img {
-    width: 300px;
-    height: auto;
-    border-radius: 50%;
-    
-    display: block;
-    margin: 0 auto;
+#about-me {
+    padding-top: 3em;
+
+    h4 {
+        font-family: Oswald;
+        font-size: 2.2em;
+        font-weight: 700;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $white;
+        margin: .5em .5em;
+    }
+
+    p {
+        margin: 2.5em 1.5em;
+    }
 }
 
-#about-me p {
-    margin: 2.5em 1.5em;
+@media (min-width: 1000px) {
+    #about-me {
+        padding: 3em 11em;
+        text-align: center;
+
+        h4 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.9em;
+        }
+        
+    }
 }
 
 /*  SECTION - SKILLS  */
