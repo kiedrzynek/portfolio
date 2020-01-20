@@ -438,23 +438,53 @@ nav {
 
 #contact {
 
+    h3 {
+        margin: .6em;
+    }
+
+    p {
+        text-align: center;
+        margin: .5em 2em;
+    }
+
     fieldset {
         width: 85%;
         margin: 0 auto;
-    }
-    
-    label, 
-    input:nth-of-type(1),  /* email */
-    textarea {
-        display: block;
-        margin: 0 auto;
-        padding: 0.3em;
-        width: 85%;
-        font-size: 0.8em;
-    }
 
-    textarea {
-        height: 25vh;
+        border: none;
+
+        legend {    /* hidden visually, but not for screen-readers */
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            width: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+        }
+
+        label, 
+        input:nth-of-type(1),  /* email */
+        textarea {
+            display: block;
+            margin: .5em auto 1.2em auto;
+            padding: 0.3em;
+            width: 85%;
+            font-size: 0.8em;
+        }
+
+        label {
+            margin: 2em auto .2em auto;
+        }
+
+        textarea {
+            height: 25vh;
+        }
+
+        .submit {
+            margin-top: 2.5em;
+        }
     }
 }
 
