@@ -1,0 +1,74 @@
+@media (max-width: 999px) {
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .hero-header {
+        h1 {
+            font-size: 5em;
+            margin: 5rem 6rem 2rem 6rem;
+        }
+    
+        h2 {
+            font-size: 4em;
+            margin: 1rem 6rem 5rem 6rem;
+        }
+
+        .svg-arrow-down {
+            margin-left: 5rem;
+        }
+    }
+
+    #about-me {
+        padding: 3em 11em;
+        text-align: center;
+
+        h4 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.9em;
+        }
+    }
+
+    .skills-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #contact {
+        margin-top: 6em;
+
+        p {
+            font-size: 1.3em;
+        }
+        form {
+            width: 60%;
+            margin: 0 auto;
+            
+            fieldset {
+                label {
+                    font-size: .9em;
+                }
+
+                input[type='email'], 
+                textarea {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #projects {
+        grid-template-columns: 1fr 1fr;
+
+        .project-links {
+            width: 20rem;
+        }
+    }
+}

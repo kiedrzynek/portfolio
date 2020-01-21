@@ -1,6 +1,11 @@
-/*  MAIN STYLING    */
-
+//variables
 $white: rgb(240, 240, 240);
+
+//media-queries
+@import 'queries';
+
+
+/*  MAIN STYLING    */
 
 * {
     margin: 0;
@@ -42,23 +47,7 @@ h1, h2, h3 {
     font-family: Oswald;
 }
 
-@media (min-width: 1000px) {
-    .hero-header {
-        h1 {
-            font-size: 5em;
-            margin: 5rem 6rem 2rem 6rem;
-        }
-    
-        h2 {
-            font-size: 4em;
-            margin: 1rem 6rem 5rem 6rem;
-        }
 
-        .svg-arrow-down {
-            margin-left: 5rem;
-        }
-    }
-}
 
 p {
     text-align: left;
@@ -267,20 +256,7 @@ nav {
     }
 }
 
-@media (min-width: 1000px) {
-    #about-me {
-        padding: 3em 11em;
-        text-align: center;
 
-        h4 {
-            font-size: 3em;
-        }
-        p {
-            font-size: 1.9em;
-        }
-        
-    }
-}
 
 /*  SECTION - SKILLS  */
 
@@ -302,18 +278,13 @@ nav {
     }
 }
 
-@media (min-width: 900px) {
-    .skills-wrapper {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
+
 
 /*  SECTION - PROJECTS  */
 
 #projects {
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     grid-gap: 2em;
 
     h3 {
@@ -322,17 +293,7 @@ nav {
     }
 }
 
-@media (max-width: 900px) {
-    #projects {
-        grid-template-columns: 1fr;
-    }
-}
 
-@media (min-width: 1620px) {
-    #projects {
-        grid-template-columns: 1fr 1fr;
-    }
-}
 
 .project {
     .project-figure {
