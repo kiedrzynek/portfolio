@@ -305,26 +305,22 @@ nav {
             width: 100%;
             overflow: hidden;
 
-            .project-link {
+            .project-links {
+                display: flex;
+                justify-content: space-between;
+                z-index: 1;
                 position: absolute;
                 bottom: 25%;
-
-                width: 5.5rem;
-                height: auto;
-                padding: 0.7em;
-                margin: 0;
-
-                font-size: .9em;
-
-                z-index: 1;
-            }
-
-            .link-live {
                 left: 10%;
-            }
+                width: 13rem;
 
-            .link-code {
-                right: 40%;
+                .project-link {
+                    width: 5.5rem;
+                    height: auto;
+                    padding: 0.7em;
+                    margin: 0;
+                    font-size: .9em;
+                }
             }
             
             img {
