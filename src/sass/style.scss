@@ -262,7 +262,6 @@ nav {
 
 .skills-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.5em;
 
     .skill-wrap {
@@ -396,7 +395,7 @@ nav {
 #contact {
 
     h3 {
-        margin: .6em;
+        margin: .6em .1em;
     }
 
     p {
@@ -405,9 +404,6 @@ nav {
     }
 
     fieldset {
-        width: 85%;
-        margin: 0 auto;
-
         border: none;
 
         legend {    /* hidden visually, but not for screen-readers */
@@ -422,13 +418,14 @@ nav {
         }
 
         label, 
-        input:nth-of-type(1),  /* email */
+        input[type="email"],
         textarea {
             display: block;
             margin: .5em auto 1.2em auto;
             padding: 0.3em;
             width: 85%;
             font-size: 0.8em;
+            font-family: Raleway;
         }
 
         label {
