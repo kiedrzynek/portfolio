@@ -32,25 +32,29 @@ body {
 }
 
 h1 {
-    font-size: 2.3em;
+    font-size: 3em;
     padding-top: 1.5rem;
     margin: 1rem 1rem 0.6rem 1rem;
     text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h2 {
-    font-size: 2.1em;
-    margin: 0.4rem 1rem 1.5rem 1rem;
+    font-family: Raleway;
+    font-size: 1.4em;
+    text-transform: lowercase;
+    margin: 1rem 1rem 2rem 1rem;
     opacity: 85%;
 }
 
 h3 {
     font-size: 2.5em;
     text-align: center;
-    margin: 4rem 1rem;
+    margin: 5rem 1rem 4rem 1rem;
+    text-transform: uppercase;
 }
 
-h1, h2, h3 {
+h1, h3 {
     color: $white;
     font-family: Oswald;
 }
@@ -110,7 +114,7 @@ nav {
 
                 color: #000;
                 text-decoration: none;
-                font-size: 3.5vw;
+                font-size: .8em;
 
                 transition: 0.2s;
             }
@@ -276,7 +280,7 @@ nav {
 
 .skills-wrapper {
     display: grid;
-    grid-gap: 1.5em;
+    grid-gap: 3.5em 1.5em;
 
     .skill-wrap {
         display: grid;
@@ -415,7 +419,6 @@ nav {
     color: #181818;
 
     h3 {
-        margin: .6em .1em;
         color: #181818;
     }
 
