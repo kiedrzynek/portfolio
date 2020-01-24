@@ -6,6 +6,17 @@
 }
 
 @media (min-width: 1000px) {
+    h3 {
+        font-size: 3em;
+    }
+    h5 {
+        font-size: 1.7em;
+    }
+
+    .navbar-link {
+        font-size: 1.5em;
+    }
+
     .hero-header {
         h1 {
             font-size: 5em;
@@ -13,7 +24,7 @@
         }
     
         h2 {
-            font-size: 4em;
+            font-size: 2.5em;
             margin: 1rem 6rem 5rem 6rem;
         }
 
@@ -23,12 +34,14 @@
     }
 
     #about-me {
-        padding: 3em 11em;
-        text-align: center;
+        padding: 3em 12em;
+        text-align: left;
 
-        h4 {
+        h3 {
             font-size: 3em;
+            margin: 2em 1em 1em 1em;
         }
+
         p {
             font-size: 1.9em;
         }
@@ -37,13 +50,21 @@
     .skills-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 6em 1.5em;
+        margin: 4em 0;
+
+        .skill-icon {
+            width: 10vh;
+            height: 10vh;
+        }
     }
+    
 
     #contact {
         margin-top: 6em;
 
         p {
-            font-size: 1.3em;
+            text-align: center;
         }
         form {
             width: 60%;
@@ -63,7 +84,7 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
     #projects {
         grid-template-columns: 1fr 1fr;
 
