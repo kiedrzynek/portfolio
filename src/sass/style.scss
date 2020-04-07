@@ -419,6 +419,7 @@ nav {
 #contact {
     @include background-white;
     color: #181818;
+    min-height: 50vh;
 
     h3 {
         color: #181818;
