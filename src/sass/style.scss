@@ -431,7 +431,7 @@ nav {
 #contact {
     @include background-white;
     color: #181818;
-    min-height: 50vh;
+    min-height: 75vh;
 
     h3 {
         color: #181818;
@@ -442,43 +442,15 @@ nav {
         margin: .5em 2em;
     }
 
-    fieldset {
-        border: none;
+    .social-icons {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
 
-        legend {    /* hidden visually, but not for screen-readers */
-            clip: rect(1px, 1px, 1px, 1px);
-            -webkit-clip-path: inset(50%);
-            clip-path: inset(50%);
-            height: 1px;
-            width: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-        }
-
-        label, 
-        input[type="email"],
-        textarea {
-            display: block;
-            margin: .5em auto 1.2em auto;
-            padding: 0.3em;
-            border: none;
-            width: 85%;
-            font-size: 0.8em;
-            font-family: Raleway;
-        }
-
-        label {
-            margin: 2em auto .2em auto;
-        }
-
-        textarea {
-            height: 25vh;
-        }
-
-        .submit {
-            margin-top: 2.5em;
+        a {
+            margin: 1.5em .5em;
+            text-decoration: none;
         }
     }
 }
@@ -487,17 +459,6 @@ nav {
 
 footer {
     padding-bottom: 2em;
-
-    .social-icons {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-
-        a {
-            margin: 0.5em;
-        }
-    }
 
     p {
         margin: 0.7em;
