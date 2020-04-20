@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	entry: './src/js/index.js',
   plugins: [new HtmlWebpackPlugin({
-    template: "./src/index.html"
+    template: "./src/index.html",
+    favicon: './src/img/favicon/favicon.ico'
   })],
   module: {
     rules: [
@@ -19,9 +20,9 @@ module.exports = {
         }
       },
       {
-         test: /\.(png|svg|jpg|gif)$/,
+         test: /\.(png|svg|jpg|gif|ico)$/,
          use: [
-           'file-loader',
+           'file-loader?name=[name].[hash].[ext]',
          ],
        },
       {
