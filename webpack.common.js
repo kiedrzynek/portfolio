@@ -20,10 +20,18 @@ module.exports = {
         }
       },
       {
+        test: /\.html$/,
+        use: ["html-loader"]
+      },
+      {
          test: /\.(png|svg|jpg|gif|ico)$/,
-         use: [
-           'file-loader?name=[name].[hash].[ext]',
-         ],
+         use: {
+           loader: "file-loader",
+           options: {
+             name: "[name].[hash].[ext]",
+             outputPath: "img"
+           }
+         },
        },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
