@@ -1,4 +1,5 @@
 import '../sass/style.scss';
+import '../img/favicon/favicons.js';
 
 // navbar animation
 const hamburger = document.querySelector('.hamburger');

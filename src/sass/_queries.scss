@@ -1,3 +1,27 @@
+@media (min-width: 750px) {
+    .nav-oblique {
+      font-size: 1.2em;
+    }
+
+    .navbar-default ul li a {
+        font-size: 1.2em;
+    }
+  }
+
+@media (max-width: 450px) {
+    .hamburger {
+        width: 3.5em;
+        height: 3.7em;
+
+        top: 10px;
+        left: -55px;
+
+        .bar {
+            margin: 5px;
+        }
+    }
+}
+
 @media (max-width: 999px) {
     .skills-wrapper {
         display: grid;
@@ -13,7 +37,15 @@
         font-size: 1.7em;
     }
 
+    .navbar-default ul li a {
+        font-size: 1.4em;
+    }
+
     .navbar-link {
+        font-size: 1em;
+    }
+
+    .nav-oblique {
         font-size: 1.5em;
     }
 
@@ -43,7 +75,7 @@
         }
 
         p {
-            font-size: 1.9em;
+            font-size: 1.7em;
         }
     }
 
