@@ -12,9 +12,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }), 
-    new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/*','!favicons/**']
-    })
+    new CleanWebpackPlugin()
   ],
   module: {
       rules: [
