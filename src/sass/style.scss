@@ -136,7 +136,7 @@ section {
   width: 100%;
 
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   right: 200%;
   overflow-x: hidden;
@@ -201,10 +201,10 @@ section {
   position: fixed;
   top: 0;
   left: -50px;
-  z-index: 1;
+  z-index: 3;
 
-  width: 3.9em;
-  height: 5.5em;
+  width: 3em;
+  height: 5em;
   background-color: transparent;
   border: none;
 
@@ -216,8 +216,8 @@ section {
   mix-blend-mode: difference;
 
   .bar {
-    border-bottom: 5px solid;
-    margin: 8px;
+    border-bottom: 4px solid;
+    margin: 6px;
     color: $white;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;

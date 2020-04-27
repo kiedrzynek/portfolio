@@ -9,9 +9,13 @@
   }
 
 @media (max-width: 450px) {
+    h2 {
+        margin: 1rem 0 2rem 1rem;
+    }
+    
     .hamburger {
-        width: 3.5em;
-        height: 3.7em;
+        width: 3.2em;
+        height: 4em;
 
         top: 10px;
         left: -55px;
@@ -23,6 +27,15 @@
 }
 
 @media (max-width: 999px) {
+    section {
+        padding: 1em 1.5em;
+    }
+    .hero-header {
+        padding: 0 1.5em;
+    }
+    .hamburger {
+        left: -55px;
+    }
     .skills-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
