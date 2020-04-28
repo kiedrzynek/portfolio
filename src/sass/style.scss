@@ -17,7 +17,7 @@ $white: rgb(240, 240, 240);
   box-sizing: border-box;
 }
 
-body {
+html, body {
   background-color: #000000;
   background-image: url("../img/background-black.svg");
   background-attachment: fixed;
@@ -26,8 +26,9 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   color: $white;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
+  text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
