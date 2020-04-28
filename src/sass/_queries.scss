@@ -13,28 +13,6 @@
     } 
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .skills-wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: center;
-        align-self: center;
-        justify-content: center;
-
-        padding: .5em 5em;
-
-        .skill-wrap {
-            margin: 3em 3em;
-
-            span {
-                display: block;
-                text-align: center;
-                margin-top: 5px;
-            }
-        }
-    }
- }
 
 @media (min-width: 750px) {
     .nav-oblique {

@@ -22,6 +22,9 @@ body {
   background-image: url("../img/background-black.svg");
   background-attachment: fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   color: $white;
   font-family: Raleway;
   font-size: 18px;
@@ -681,3 +684,4 @@ footer {
 
 //media-queries
 @import "queries";
+@import "IE-style";
