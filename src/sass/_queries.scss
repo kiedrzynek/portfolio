@@ -1,3 +1,19 @@
+// fix for bad fixed background performance on Safari
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+        body {
+            background-image: initial;
+            background-attachment: initial;
+        }
+
+        #about-me, 
+        #contact { 
+            background-attachment: scroll;
+        }
+    } 
+}
+
+
 @media (min-width: 750px) {
     .nav-oblique {
       font-size: 1.2em;
@@ -9,9 +25,13 @@
   }
 
 @media (max-width: 450px) {
+    h2 {
+        margin: 1rem 0 2rem 1rem;
+    }
+
     .hamburger {
-        width: 3.5em;
-        height: 3.7em;
+        width: 3.2em;
+        height: 4em;
 
         top: 10px;
         left: -55px;
@@ -23,6 +43,15 @@
 }
 
 @media (max-width: 999px) {
+    section {
+        padding: 1em 1.5em;
+    }
+    .hero-header {
+        padding: 0 1.5em;
+    }
+    .hamburger {
+        left: -55px;
+    }
     .skills-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -122,6 +151,7 @@
 
         .project-links {
             width: 20rem;
+            top: 35%;
         }
     }
 }
