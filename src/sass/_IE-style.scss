@@ -21,7 +21,9 @@
     }
 
     .project-image-wrapper {
+        background-color: #000 !important;
         img {
+            opacity: .4 !important;
             height: auto !important;
         }
     }
