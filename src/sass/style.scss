@@ -26,7 +26,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   color: $white;
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   overflow-x: hidden;
 }
@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-  font-family: Raleway;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.4em;
   font-weight: 100;
   text-transform: uppercase;
@@ -48,7 +48,7 @@ h2 {
 }
 
 h3 {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 2.2em;
   font-weight: 700;
   line-height: 1.2;
@@ -60,7 +60,7 @@ h3 {
 h1,
 h3 {
   color: $white;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
 }
 
 h5 {
