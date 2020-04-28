@@ -1,3 +1,18 @@
+// fix for bad fixed background performance on Safari
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) { 
+        body {
+            background-image: initial;
+            background-attachment: initial;
+        }
+
+        #about-me, 
+        #contact { 
+            background-attachment: scroll;
+        }
+    } 
+}
+
 @media (min-width: 750px) {
     .nav-oblique {
       font-size: 1.2em;
