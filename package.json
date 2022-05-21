@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --watch --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "cp CNAME dist/CNAME && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
